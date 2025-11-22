@@ -1,0 +1,9 @@
+.modal-container {
+  position: absolute;
+  top: 200px;
+  left: 550px;
+  z-index: 0;
+  background-color: #92487a;
+  display: flex;
+  padding: 16px;
+}

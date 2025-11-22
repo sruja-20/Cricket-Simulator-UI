@@ -1,0 +1,63 @@
+body {
+  background-color: #540863;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.lay-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.lay-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.lay-align-center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.lay-align-start-start {
+  justify-content: start;
+  align-items: start;
+}
+
+.lay-align-start-center {
+  justify-content: start;
+  align-items: center;
+}
+
+.lay-align-end-end {
+  justify-content: end;
+  align-items: end;
+}
+
+.lay-align-space-between-center {
+  justify-content: space-between;
+}
+
+.gap4 {
+  gap: 4px;
+}
+
+.gap8 {
+  gap: 8px;
+}
+
+.gap16 {
+  gap: 16px;
+}
+
+.wd-100 {
+  width: 100%;
+}
+
+.ht-100 {
+  height: 100%;
+}
+
+.icon {
+  cursor: pointer;
+}

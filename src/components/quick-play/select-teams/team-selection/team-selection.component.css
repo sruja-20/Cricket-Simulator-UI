@@ -1,0 +1,16 @@
+.team-selection-container {
+  width: 150px;
+  height: 150px;
+  background-color: #fff9d0;
+  color: black;
+  .teams {
+    height: 70%;
+  }
+}
+.scroll-up,
+.scroll-down {
+  background-color: #caf4ff;
+  padding: 4px;
+  box-sizing: border-box;
+  height: 15%;
+}
