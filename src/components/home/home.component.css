@@ -1,0 +1,5 @@
+.matches-container {
+  height: calc(100% - 75px);
+  background-color: #5c88c4;
+  overflow: auto;
+}

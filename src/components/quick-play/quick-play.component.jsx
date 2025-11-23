@@ -1,10 +1,11 @@
+import Button from "../../shared/components/button/button.component";
 import "./quick-play.component.css";
 export default function QuickPlay({ onClick }) {
   return (
     <>
-      <div className="quick-play-container" onClick={onClick}>
+      <Button className="btn primary" onClick={onClick}>
         Quick Play
-      </div>
+      </Button>
     </>
   );
 }

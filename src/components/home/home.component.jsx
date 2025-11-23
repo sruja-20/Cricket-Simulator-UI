@@ -1,34 +1,20 @@
 import "./home.component.css";
 import QuickPlay from "../quick-play/quick-play.component";
-import ModalDilog from "../../shared/components/modal-dilog/model-dilog.component";
-import { useState } from "react";
-import TeamSelection from "../quick-play/select-teams/team-selection/team-selection.component";
-import SelectTeams from "../quick-play/select-teams/select-teams.component";
+import AddTeams from "../add-teams/add-teams.component";
+import MatchList from "../match-list/match-list.component";
 
 export default function Home() {
-  const [isDilogOpen, setIsDilogOpen] = useState(false);
-  function openDilog() {
-    setIsDilogOpen(true);
-  }
-  function closeDilog() {
-    setIsDilogOpen(false);
-  }
-  let modalDilog = isDilogOpen ? (
-    <ModalDilog
-      onClose={closeDilog}
-      secondaryAction={"Cancel"}
-      primaryAction={"Save"}
-      title={"Select teams"}
-    >
-      <SelectTeams></SelectTeams>
-    </ModalDilog>
-  ) : (
-    <></>
-  );
   return (
     <>
-      <QuickPlay onClick={openDilog} />
-      {modalDilog}
+      <div className="home-container ht-100 lay-column gap8">
+        <div className="lay-row gap8 lay-align-end-end">
+          <QuickPlay />
+          <AddTeams />
+        </div>
+        <div className="layrow matches-container">
+          <MatchList></MatchList>
+        </div>
+      </div>
     </>
   );
 }
