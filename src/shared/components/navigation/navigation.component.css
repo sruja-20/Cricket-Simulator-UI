@@ -1,0 +1,9 @@
+ul {
+  list-style-type: none;
+}
+li {
+  cursor: pointer;
+}
+.selected {
+  border-bottom: solid 2px white;
+}
